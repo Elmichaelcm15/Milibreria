@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #753f26;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Contenedor del header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #753f26; /* Color de fondo del header */
+}
+
+/* Logo */
+.logo {
+    max-width: 10%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #753f26;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 0.5s;
+}    
+
+/* Estilos específicos para cada red social (puedes ajustar colores si deseas) */
+.social-icon i {
+    font-size: 20px;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.instagram {
+    background-color: #e4405f;
+}
+
+.social-icon.twitter {
+    background-color: #55acee;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+/* Estilos para los botones de sesión */
+.session-buttons button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.session-buttons button:hover {
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+
+.header-buttons button {
+    background-color: #8B4513; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+    background-color: #000000; /* Cambio de color al pasar el mouse */
+    transition: 0.5s;
+}
+.nav{
+    width: 80%;
+    height: 3em;
+    background-color: rgb(0, 0, 0) ;
+}
+
+.barnav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.barnav a{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+
+} 
+
+
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.menu:hover{
+    background-color: rgb(71, 47, 47);
+    color: rgb(250, 250, 250);
+    transition: 0.5s;
+}
+
+.banner{
+    width: 80%;
+    height: calc(100vh - 7em);
+    background-color: rgb(172, 33, 130) ;
+    background-image: url(../img/img\ 3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-banner{
+    font-size: 3em;
+    color: white;
+}
+
+.btn-banner{
+    background-color: sienna;
+    text-decoration: none;
+    padding: 1em 4em;
+    color: aliceblue;
+    font-size: 1.25em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+
+.btn-banner:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.article{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255) ;
+    background-image: url(../img/img\ 3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-article{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.paragraph-article{
+    color: white;
+    font-size: 1.25em;
+    width: 80%;
+    text-align: justify;
+    margin: 2em;
+    align-items: center;
+}
+
+.galery{
+    width: 80%;
+    height: 30%;
+    background-color: #a0522d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-galery{
+    width: 24%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img img{
+    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-img{
+    background-color: #753f26;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+.btn-img:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.footer{
+    width: 60%;
+    height: 4em;
+    background-color: #753f26 ;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-footer{
+    font-size: 1.5em;
+}
+
